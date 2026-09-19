@@ -19,7 +19,7 @@ const Dashboard = ({ setToken }) => {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/api/dashboard?page=${page}`,
+                `https://taskflow-backend-1-k24g.onrender.com/api/dashboard?page=${page}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
