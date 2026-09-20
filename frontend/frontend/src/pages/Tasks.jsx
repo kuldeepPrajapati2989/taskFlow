@@ -13,8 +13,8 @@ const Tasks = ({ setToken }) => {
             const token = localStorage.getItem("token");
 
             const url = search
-                ? `http://localhost:5000/api/tasks/search?keyword=${search}`
-                : "http://localhost:5000/api/tasks";
+                ? `https://taskflow-backend-1-k24g.onrender.com/api/tasks/search?keyword=${search}`
+                : "https://taskflow-backend-1-k24g.onrender.com/api/tasks";
 
             const response = await fetch(url, {
                 headers: {
@@ -54,7 +54,7 @@ const Tasks = ({ setToken }) => {
             const token = localStorage.getItem("token");
 
             await fetch(
-                `http://localhost:5000/api/tasks/${id}`,
+                `https://taskflow-backend-1-k24g.onrender.com/api/tasks/${id}`,
                 {
                     method: "DELETE",
                     headers: {
